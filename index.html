@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Permissions Challenge</title>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <button class="get-users">Get Users</button>
+  <div class="users"></div>
+
+  <script id="user-template" type="text/x-handlebars-template">
+    <li id="{{id}}"> {{name}} <button class="permissions">Get Permissions</button></li>
+    <hr>
+  </script>
+
+  <script id="permissions-template" type="text/x-handlebars-template">
+    <li>{{ permission }}</li>
+  </script>
+  
+</body>
+</html>
