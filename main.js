@@ -47,7 +47,7 @@ $(function() {
     userPermissions
       .done(function(permissions) {
         permissions.forEach(function(permission) {
-          var html;
+          var html = {};
           if(permission.userId == btnId) {
             html = {
               permission: permission.permissions
