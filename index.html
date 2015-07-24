@@ -14,8 +14,11 @@
   <div class="users"></div>
 
   <script id="user-template" type="text/x-handlebars-template">
-    <li id="{{id}}"> {{name}} <button class="permissions">Get Permissions</button></li>
-    <hr>
+    {{#each .}}
+      <li id="{{id}}"> {{name}} <button class="permissions">Get Permissions</button></li>
+      <hr>
+      <id>
+    {{/each}}
   </script>
 
   <script id="permissions-template" type="text/x-handlebars-template">
